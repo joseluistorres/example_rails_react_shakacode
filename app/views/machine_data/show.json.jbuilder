@@ -1,0 +1,1 @@
+json.partial! "machine_data/machine_datum", machine_datum: @machine_datum

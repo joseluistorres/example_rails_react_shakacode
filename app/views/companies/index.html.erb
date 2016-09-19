@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Example with React on Rails gem</h1>
+  
+
+<div class="container">
+  <%= react_component("CompaniesApp", props: @companies, prerender: false) %>
+</div>
+<%= link_to 'New Company', new_company_path %>

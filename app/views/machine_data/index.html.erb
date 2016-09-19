@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Machine Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Preread json</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @machine_data.each do |machine_datum| %>
+      <tr>
+        <td><%= machine_datum.name %></td>
+        <td><%= machine_datum.preread_json %></td>
+        <td><%= link_to 'Show', machine_datum %></td>
+        <td><%= link_to 'Edit', edit_machine_datum_path(machine_datum) %></td>
+        <td><%= link_to 'Destroy', machine_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Machine Datum', new_machine_datum_path %>

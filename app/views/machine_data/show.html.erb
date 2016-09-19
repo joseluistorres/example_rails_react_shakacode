@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @machine_datum.name %>
+</p>
+
+<p>
+  <strong>Preread json:</strong>
+  <%= @machine_datum.preread_json %>
+</p>
+
+<%= link_to 'Edit', edit_machine_datum_path(@machine_datum) %> |
+<%= link_to 'Back', machine_data_path %>
